@@ -1093,6 +1093,135 @@
     background: #fff;
 }
 
+@media (max-width: 768px) {
+    .main_field {
+        padding: 40px 0;
+    }
+
+    .main_field .inner {
+        display: flex;
+        /*  */
+        flex-direction: column;
+        margin: 0 16px;
+    }
+
+    .main_field .inner .left {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex: 1;
+    }
+
+    .main_field .inner .left img {
+        height: 32px;
+        margin-bottom: 24px;
+        /*  */
+        margin-bottom: 0;
+    }
+
+    .main_field .inner .left h2 {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #737170;
+        margin-bottom: 32px;
+        /*  */
+        margin-bottom: 0;
+    }
+
+    .main_field .inner .left a {
+        display: inline-block;
+        padding: 8px 24px;
+        border: 1px solid #737170;
+    }
+
+    .main_field .search {
+        margin-top: 16px;
+    }
+
+    .main_field .search strong {
+        display: none;
+    }
+
+
+    .main_field .inner .right {
+        flex: 4;
+    }
+
+    .main_field .inner .right .search {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 8px 8px 24px;
+        background: #f9f9f9;
+        height: 48px;
+        border-radius: 8px;
+    }
+
+    .main_field .search input {
+        flex: 1;
+        margin-left: 32px;
+        margin-left: auto;
+    }
+
+    .main_field .search input::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 8px 16px;
+
+    }
+
+    .main_field .search input:focus::placeholder {
+        opacity: 0;
+        border: 1px solid #ddd;
+
+    }
+
+    .main_field .search button {
+        margin-left: 8px;
+        border: 1px solid #ddd;
+        border-radius: px;
+        padding: 4px 8px;
+    }
+
+    .main_field .right .list {
+        margin: 32px 0;
+    }
+
+    .main_field .right .list h3 {
+        display: inline-block;
+        padding: 16px 56px;
+        background: #969696;
+        color: #fff;
+    }
+
+    .main_field .right .list_box>ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        /*  */
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main_field .right .list_box>ul>li {
+        border: 1px solid #ddd;
+        background: #f7f7f7;
+        text-align: center;
+    }
+
+    .main_field .right .list_box>ul>li>a {
+        display: inline-block;
+        padding: 24px 32px;
+
+    }
+
+    .main_field .right .list_box>ul>li:hover {
+        background: #fff;
+    }
+
+}
+
 /* 메인 노티스 */
 
 .main_notice {
@@ -1637,6 +1766,115 @@
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .main_map {
+        padding: 40px 0;
+    }
+
+    .main_map .inner {
+        display: flex;
+        gap: 24px;
+        /*  */
+        flex-direction: column;
+        margin: 0 16px;
+    }
+
+    .main_map .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main_map .left img {
+        height: 40px;
+        margin-bottom: 16px;
+    }
+
+    .main_map .left h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #4e86ff;
+        margin-bottom: 8px;
+    }
+
+    .main_map .left .call {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        border: 1px solid #f2f2f2;
+        margin-top: 8px;
+
+        flex: 1;
+        /*  */
+        padding: 24px 0;
+    }
+
+    .main_map .left .call strong {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .main_map .left .call span {
+        font-size: 20px;
+        font-weight: 600;
+        color: #4e86ff;
+        margin-bottom: 16px;
+    }
+
+    .main_map .go_box {
+        margin-top: 16px;
+    }
+
+    .main_map .go_box a {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 16px;
+        border: 1px solid #f1f1f1;
+        background: #fff;
+        margin-top: 8px;
+
+
+    }
+
+    .main_map .go_box a::after {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(../images/chevron-right.svg);
+    }
+
+    .main_map .right {
+        flex: 3;
+
+    }
+
+    .main_map .right .map_box {
+        width: 100%;
+    }
+
+    .main_map .right .map_box .wrap_map {
+        height: 400px;
+    }
+
+    .main_map .right .map_box .wrap_controllers {
+        display: none;
+    }
+
+    .main_map .right .map_box .cont {
+        display: none;
+    }
+
+    .main_map .right .map_box .root_daum_roughmap {
+        width: 100%;
+    }
+}
+
 /* 푸터 */
 
 .footer {
@@ -1689,4 +1927,74 @@
 
 .footer span {
     color: #fef327;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0;
+        background: #444;
+        /*  */
+        padding: 24px 0;
+
+    }
+
+    .footer .customer>ul {
+        display: flex;
+        gap: 40px;
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 24px;
+        /*  */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 16px;
+        margin-bottom: 24px;
+        gap: 16px;
+    }
+
+    .footer .customer>ul>li {
+        position: relative;
+    }
+
+    .footer .customer>ul>li~li::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translate(0, -50%);
+        width: 1px;
+        height: 0.5em;
+        background: #ddd;
+        /*  */
+        display: none;
+    }
+
+    .footer .info>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #fff;
+        margin-bottom: 24px;
+        /*  */
+        margin: 0 16px;
+        font-size: 14px;
+    }
+
+    .footer address {
+        font-size: 12px;
+        color: #fff;
+        opacity: 0.5;
+        /*  */
+        margin: 0 16px;
+        margin-top: 24px;
+    }
+
+    .footer .ant {
+        font-weight: 600;
+        color: #fef327;
+    }
+
+    .footer span {
+        color: #fef327;
+    }
 }
